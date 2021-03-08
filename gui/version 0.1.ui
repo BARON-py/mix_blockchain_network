@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.1">
+  <object class="tk.Toplevel" id="toplevel">
+    <property name="height">200</property>
+    <property name="iconphoto">mix_blockchain_network_Coin_logo_500x500.PNG</property>
+    <property name="resizable">both</property>
+    <property name="takefocus">true</property>
+    <property name="title" translatable="yes">mix_blockchain_network Coin</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="create_blockchain_button">
+            <property cbtype="simple" name="command" type="command">create_blockchain</property>
+            <property name="compound">top</property>
+            <property name="image">blockchain_44x50.png</property>
+            <property name="text" translatable="yes">Create Blockchain</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="create_wallet_button">
+            <property cbtype="simple" name="command" type="command">Wallet_Create</property>
+            <property name="compound">top</property>
+            <property name="image">wallet_60x50.png</property>
+            <property name="text" translatable="yes">Create Wallet</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="send_coin_button">
+            <property cbtype="simple" name="command" type="command">send_coin</property>
+            <property name="compound">top</property>
+            <property name="image">money_67x50.png</property>
+            <property name="text" translatable="yes">Send Coin</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="send_message_button">
+            <property cbtype="simple" name="command" type="command">send_message</property>
+            <property name="compound">top</property>
+            <property name="image">emails_65x50.png</property>
+            <property name="text" translatable="yes">Send Message</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="balance_label">
+            <property name="text" translatable="yes">Balance: </property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="ipadx">25</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+              <property name="sticky">sw</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="reflesh_balance_button">
+            <property cbtype="simple" name="command" type="command">reflesh_balance</property>
+            <property name="compound">top</property>
+            <property name="text" translatable="yes">Reflesh Balance</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+              <property name="sticky">se</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button1">
+            <property cbtype="simple" name="command" type="command">connect_node</property>
+            <property name="compound">top</property>
+            <property name="image">cell-molecule_50x50.png</property>
+            <property name="text" translatable="yes">Connect Node</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button2">
+            <property cbtype="simple" name="command" type="command">start_node_server</property>
+            <property name="compound">top</property>
+            <property name="image">computer-internet-network_68x50.png</property>
+            <property name="text" translatable="yes">Start Node Server</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button3">
+            <property cbtype="simple" name="command" type="command">connect_node_mix_blockchain_network</property>
+            <property name="compound">top</property>
+            <property name="image">cell-molecule_50x50.png</property>
+            <property name="text" translatable="yes">Connect Node
+from mix_blockchain_network 
+database</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button4">
+            <property cbtype="simple" name="command" type="command">test_mode_on</property>
+            <property name="compound">top</property>
+            <property name="text" translatable="yes">Test Mode ON</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button6">
+            <property cbtype="simple" name="command" type="command">test_mode_off</property>
+            <property name="compound">top</property>
+            <property name="text" translatable="yes">Test Mode OFF</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button7">
+            <property cbtype="simple" name="command" type="command">stop_node_server</property>
+            <property name="compound">top</property>
+            <property name="image">computer-internet-network_68x50.png</property>
+            <property name="text" translatable="yes">Stop Node Server</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="padx">25</property>
+              <property name="pady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
