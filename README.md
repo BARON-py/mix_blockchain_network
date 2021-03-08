@@ -1,4 +1,4 @@
-# mix_blockchain_network Coin
+# mix_blockchain_network
 
 #Introducing
 This is an open source blockchain network project. It exists for people to build and use their own blockchain networks. Or to join the network created by others.
