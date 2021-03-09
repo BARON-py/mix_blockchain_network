@@ -122,8 +122,7 @@ class main_gui:
             print("You don't write a receiver adress ?")
         
         amount = simpledialog.askfloat("Input", "Coin Amount: ",
-                               parent=self.toplevel,
-                               minvalue=0.0, maxvalue=100000.0)
+                               parent=self.toplevel)
         
         if amount is not None:
             print("Coin Amount: ", amount)
