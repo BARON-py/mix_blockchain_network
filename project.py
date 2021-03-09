@@ -2,12 +2,10 @@ import sys
 #import os
 #sys.path.append(os.path.join(os.path.dirname(__file__), "core"))
 def start_cli():
-    from cli.cli import start
+    from cli import start
     start()
 def start_gui():
-    from gui.gui import start
-    import os
-    os.chdir('gui')
+    from gui import start
     start()
 n = len(sys.argv)
 if n > 1:

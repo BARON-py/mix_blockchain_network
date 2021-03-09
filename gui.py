@@ -106,7 +106,7 @@ class main_gui:
 
     def create_blockchain(self):
         create_blockchain()
-        messagebox.showinfo('Wallet', 'Wallet are created.')
+        messagebox.showinfo('Wallet', 'Blockchain are created.')
 
     def Wallet_Create(self):
         Wallet_Create()
